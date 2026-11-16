@@ -1,11 +1,15 @@
 #include <iostream>
-#include "Crypt.h" // include the class 
+#include "Crypt.h" // include the class
 
 int main()
 {
-    Crypt crypt; // create the obj
+    Crypt crypt; // create the object
     crypt.DisplayMessage(); // display the message
 
-    std::cin.get(); // pause for a keypress before closing
+    std::cout << "\n";
+    std::cout << "1. Enter the Crypt" << std::endl;
+    std::cout << "2. Flee" << std::endl;
+
+    std::cin.get(); // pause before closing
     return 0;
 }
